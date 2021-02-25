@@ -4,7 +4,7 @@ public class Zookeeper {
 	private String name;
 
 	public void feed(Animal a) {
-		System.out.println("Animalul "+a.getName()+"a fost hranit");
+		System.out.println("Animalul "+ a.getName()+" a fost hranit");
 	}
 
 	public Zookeeper(String name) {
