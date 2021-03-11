@@ -22,12 +22,13 @@ public class Program {
 		
 		List<Aplicant> listaAplicanti;
 		AplicantReader aplicantReader = new StudentReader("studenti.txt");
-		
+		Proiect proiect = new Proiect(80);
 		
 		try {
 			listaAplicanti = citesteAplicanti(aplicantReader);
 			for(Aplicant angajat:listaAplicanti) {
 				System.out.println(angajat.toString());
+				angajat.afiseazaStatus(proiect);
 				System.out.println(angajat.getSumaFinantata());
 			}
 				
