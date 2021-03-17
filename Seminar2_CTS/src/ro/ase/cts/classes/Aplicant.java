@@ -10,6 +10,20 @@ public abstract class Aplicant {
 	protected int nrProiecte;
 	protected String[] denumiriProiect;
 	
+	public Aplicant() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Aplicant(String nume, String prenume, int varsta, int punctaj, int nr_proiecte, String[] denumireProiect) {
+		super();
+		this.nume = nume;
+		this.prenume = prenume;
+		this.varsta = varsta;
+		this.punctaj = punctaj;
+		this.nrProiecte = nr_proiecte;
+		this.denumiriProiect = denumireProiect;
+	}
 
 	public String getNume() {
 		return nume;
@@ -60,20 +74,7 @@ public abstract class Aplicant {
 	
 	
 
-	public Aplicant() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-
-	public Aplicant(String nume, String prenume, int varsta, int punctaj, int nr_proiecte, String[] denumireProiect) {
-		super();
-		this.nume = nume;
-		this.prenume = prenume;
-		this.varsta = varsta;
-		this.punctaj = punctaj;
-		this.nrProiecte = nr_proiecte;
-		this.denumiriProiect = denumireProiect;
-	}
+	
 
 	public int getNrProiecte() {
 		return nrProiecte;

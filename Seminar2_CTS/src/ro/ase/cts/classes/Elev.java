@@ -6,6 +6,17 @@ public class Elev extends Aplicant {
 	private int clasa;
 	private String tutore;
 	private static float sumaFinantare = 30;
+	
+	public Elev() {
+		super();
+	}
+
+	public Elev(String nume, String prenume, int varsta, int punctaj, int nr_proiecte, String[] denumireProiect,
+			int clasa, String tutore) {
+		super(nume, prenume, varsta, punctaj, nr_proiecte, denumireProiect);
+		this.clasa = clasa;
+		this.tutore = tutore;
+	}
 
 	public int getClasa() {
 		return clasa;
@@ -28,16 +39,7 @@ public class Elev extends Aplicant {
 		return "Elev: "+super.toString() + "clasa: " + clasa + "tutore: "+tutore;
 	}
 
-	public Elev() {
-		super();
-	}
-
-	public Elev(String nume, String prenume, int varsta, int punctaj, int nr_proiecte, String[] denumireProiect,
-			int clasa, String tutore) {
-		super(nume, prenume, varsta, punctaj, nr_proiecte, denumireProiect);
-		this.clasa = clasa;
-		this.tutore = tutore;
-	}
+	
 
 	public int finantare() {
 		int s = 30;
