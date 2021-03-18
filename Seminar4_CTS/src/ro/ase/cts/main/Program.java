@@ -1,5 +1,6 @@
 package ro.ase.cts.main;
 import ro.ase.cts.clase.*;
+import ro.ase.cts.exercitiu.*;
 
 public class Program {
 
@@ -18,6 +19,16 @@ public class Program {
 		
 		System.out.println(clinicaLazy1.toString());
 		System.out.println(clinicaLazy2.toString());
+		
+		//Thread Safe
+		Resedinta resedinta1 = Resedinta.getInstance(100,"Damian Narcis","052345");
+		resedinta1.setSuprafata(9000);
+		resedinta1.setProprietar("Dumitru Stefan");
+		Resedinta resedinta2 = Resedinta.getInstance(101,"Popescu Dorel","051111");
+		
+		
+		System.out.println(resedinta1.toString());
+		System.out.println(resedinta2.toString());
 	}
 
 }
