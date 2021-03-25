@@ -1,6 +1,5 @@
 package ro.ase.cts.factorymethod;
 
-import ro.ase.cts.simplefactory.Categorie;
 
 public class FactoryGripa implements FactoryCategorie {
 

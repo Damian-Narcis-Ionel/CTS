@@ -1,7 +1,6 @@
 package ro.ase.cts.factorymethod;
 
-import ro.ase.cts.simplefactory.Body;
-import ro.ase.cts.simplefactory.Categorie;
+import ro.ase.cts.factorymethod.*;
 
 public class FactoryBody implements FactoryCategorie{
 
