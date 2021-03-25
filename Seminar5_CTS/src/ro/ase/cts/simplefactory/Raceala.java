@@ -1,4 +1,4 @@
-package ro.ase.cts.clase;
+package ro.ase.cts.simplefactory;
 
 public class Raceala extends Categorie{
 

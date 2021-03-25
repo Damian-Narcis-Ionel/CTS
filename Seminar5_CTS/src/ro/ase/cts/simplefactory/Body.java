@@ -1,8 +1,8 @@
-package ro.ase.cts.clase;
+package ro.ase.cts.simplefactory;
 
-public class Durere extends Categorie {
+public class Body extends Categorie{
 
-	public Durere(float pretDeBaza) {
+	public Body(float pretDeBaza) {
 		super(pretDeBaza);
 		// TODO Auto-generated constructor stub
 	}
@@ -10,7 +10,7 @@ public class Durere extends Categorie {
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("Durere [pretDeBaza=");
+		builder.append("Body [pretDeBaza=");
 		builder.append(pretDeBaza);
 		builder.append("]");
 		return builder.toString();
