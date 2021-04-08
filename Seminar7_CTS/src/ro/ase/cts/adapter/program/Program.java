@@ -15,7 +15,6 @@ public class Program {
 		Leasing leasing = new Leasing();
 		AdapterCreditObj adapter = new AdapterCreditObj(leasing);
 		oferaInfoCredit(adapter,"Ionel",245.50f);
-
 				
 		//de clase:
 		AdapterCreditClase adapterCredit = new AdapterCreditClase();
