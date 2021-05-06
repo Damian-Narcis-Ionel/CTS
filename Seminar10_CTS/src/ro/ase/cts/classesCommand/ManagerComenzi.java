@@ -1,4 +1,4 @@
-package ro.ase.cts.classes;
+package ro.ase.cts.classesCommand;
 
 import java.util.ArrayList;
 import java.util.List;

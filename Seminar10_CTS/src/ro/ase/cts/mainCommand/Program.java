@@ -1,10 +1,10 @@
-package ro.ase.cts.main;
+package ro.ase.cts.mainCommand;
 
-import ro.ase.cts.classes.Constituie;
-import ro.ase.cts.classes.ContBancar;
-import ro.ase.cts.classes.Depunere;
-import ro.ase.cts.classes.ManagerComenzi;
-import ro.ase.cts.classes.Retragere;
+import ro.ase.cts.classesCommand.Constituie;
+import ro.ase.cts.classesCommand.ContBancar;
+import ro.ase.cts.classesCommand.Depunere;
+import ro.ase.cts.classesCommand.ManagerComenzi;
+import ro.ase.cts.classesCommand.Retragere;
 
 public class Program {
 
@@ -16,6 +16,7 @@ public class Program {
 		manager.executaComanda();
 		
 		manager.invoca(new Depunere(new ContBancar("Alisa"),300));
+		manager.executaComanda();
 		manager.executaComanda();
 		
 	}
