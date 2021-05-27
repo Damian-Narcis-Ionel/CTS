@@ -1,9 +1,9 @@
-package ro.acs.cts.classes;
+package ro.ase.cts.classes;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Student {
+public class Student implements  IStudent {
     private String nume;
     private List<Integer> note;
 
@@ -33,6 +33,13 @@ public class Student {
         note.add(nota);
     }
 
+    public int getNota(int index){
+        if(index>=0 && index< note.size()){
+            return note.get(index);
+        }
+        throw new IndexOutOfBoundsException();
+    }
+
     public float calculeazaMedie(){
         float suma=0;
         for(int nota:note){
@@ -44,20 +51,12 @@ public class Student {
         return suma;
     }
 
-    public int getNota(int index){
-        if(index>=0 && index< note.size()){
-            return note.get(index);
-        }
-        throw new IndexOutOfBoundsException();
-    }
-    
     public boolean areRestante() {
-    	for(int nota:note) {
-    		if(nota<5) {
-    			return true;
-    		}
-    	}
-    	return false;
+        for(int nota:note) {
+            if(nota<5) {
+                return true;
+            }
+        }
+        return false;
     }
-
 }
