@@ -29,4 +29,5 @@ public class TestCasePromovabilitate {
 		assertEquals(1,grupa.getPromovabilitate(), .01f);
 	}
 
+	
 }
