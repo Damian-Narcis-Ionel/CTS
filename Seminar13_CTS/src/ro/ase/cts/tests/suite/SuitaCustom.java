@@ -15,6 +15,6 @@ import ro.ase.cts.tests.TestCasePromovabilitate;
 @SuiteClasses({GrupaTest.class, GrupaTestWithFake.class, TestCasePromovabilitate.class})
 @IncludeCategory(TestePromovabilitate.class)
 @ExcludeCategory(TesteNormale.class)
-public class SuitaCustom {
+public class SuitaCustom{
 
 }
